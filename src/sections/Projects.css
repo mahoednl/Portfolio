@@ -1,0 +1,207 @@
+/* Projects.css */
+
+/* Section principale avec glassmorphism léger */
+.projects-section {
+  padding: 4rem 2rem;
+  background: rgba(26, 28, 31, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 255, 247, 0.2);
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 8px 32px rgba(0, 255, 247, 0.1);
+}
+
+/* Titre principal néon */
+.projects-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00FFF7;
+  margin-bottom: 2rem;
+
+}
+
+/* Grille de cartes */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Carte projet avec glassmorphism et hover néon */
+.project-card {
+  background: rgba(26, 28, 31, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 2px solid #00FFF7;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 255, 247, 0.2);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #FF2768;
+}
+
+/* Titre de la carte en rouge néon */
+.project-card h3 {
+  color: #FF2768;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+
+}
+
+/* Description du projet */
+.project-card p {
+  font-size: 1rem;
+  color: #EAFBFF;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+/* Bouton “Voir plus” néon */
+.project-button {
+  background-color: rgba(26, 28, 31, 0.6);
+  border: 2px solid #00FFF7;
+  color: #00FFF7;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 247, 0.2);
+}
+.project-button:hover {
+  background-color: #00FFF7;
+  color: #1A1C1F;
+  box-shadow:
+    0 0 8px #00FFF7,
+    0 0 16px rgba(0, 255, 247, 0.8);
+  transform: scale(1.05);
+}
+
+/* Overlay sombre couvrant tout l’écran */
+.details-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* Carte modale de détails centrée */
+.details-card {
+  position: relative;
+  background: rgba(26, 28, 31, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 255, 247, 0.2);
+  border-radius: 12px;
+  box-shadow:
+    0 8px 32px rgba(0, 255, 247, 0.2),
+    0 0 16px rgba(0, 255, 247, 0.1);
+  max-width: 800px;
+  width: 90%;
+  max-height: 80%;
+  overflow-y: auto;
+  padding: 2rem 2.5rem 3rem 2.5rem;
+}
+
+/* Bouton “✖” en haut à droite */
+.project-close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #FF2768;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+
+/* Contenu interne des détails */
+.details-inner {
+  margin-top: 1.5rem;
+  color: #EAFBFF;
+}
+
+/* Titre du détail en néon cyan */
+.details-title {
+  font-size: 1.8rem;
+  color: #00FFF7;
+  margin-bottom: 1rem;
+
+  border-bottom: 1px solid rgba(0, 255, 247, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+/* Corps de texte et listes à l’intérieur */
+.details-body p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.details-body h4 {
+  font-size: 1.3rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+  color: #00FFF7;
+
+}
+
+.details-body ul {
+  list-style: disc inside;
+  margin-left: 1rem;
+}
+
+.details-body li {
+  margin-bottom: 0.5rem;
+}
+
+/* Si tu affiches des images dans GamePreview, stylise-les également */
+.details-body img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin: 0.8rem 0;
+}
+
+/* Animation fadeIn (déjà déclarée si tu l’utilises ailleurs) */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive (petits écrans) */
+@media (max-width: 600px) {
+  .details-card {
+    padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+  }
+  .project-close-button {
+    top: 8px;
+    right: 8px;
+    font-size: 1rem;
+  }
+  .details-title {
+    font-size: 1.6rem;
+  }
+  .project-card {
+    width: 90%;
+    max-width: 320px;
+  }
+}

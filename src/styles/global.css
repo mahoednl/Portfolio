@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+  color: #eafcff;
+  scroll-behavior: smooth;
+}
+h1, h2 {
+  margin-bottom: 1rem;
+}
+img {
+  display: block;
+}

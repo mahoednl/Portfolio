@@ -1,0 +1,89 @@
+/* Theme.css ou App.css */
+
+/* 1. Fond dégradé sombre */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f0f0f 0%, #121214 100%);
+  color: #EAFBFF;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* 2. Glassmorphism pour les conteneurs : 
+   tu peux ajouter cette classe à tous les "cards" ou sections 
+   pour qu'elles aient un fond semi-transparent flou */
+.glass {
+  background: rgba(26, 28, 31, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 255, 247, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 255, 247, 0.1);
+}
+
+
+
+/* 4. Lien néon + hover */
+a {
+  color: #00FFF7;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+a:hover {
+  color: #FF2768;
+
+}
+
+/* 5. Boutons futuristes néon */
+button {
+  background-color: rgba(26, 28, 31, 0.6);
+  color: #EAFBFF;
+  border: 2px solid #00FFF7;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 247, 0.2);
+}
+button:hover {
+  background-color: #00FFF7;
+  color: #1A1C1F;
+
+  transform: scale(1.05);
+}
+button:active {
+  transform: scale(0.97);
+  box-shadow:
+    0 0 5px rgba(255, 39, 104, 0.8);
+}
+
+/* 6. Sections principales avec un léger padding + glassmorphism */
+section {
+  padding: 4rem 2rem;
+}
+.section-glass {
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 2rem;
+  /* Glassmorphism invoqué ici */
+  background: rgba(26, 28, 31, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 255, 247, 0.2);
+  border-radius: 12px;
+}
+
+/* 7. Barre de progression de scroll (en haut) */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #00FFF7;
+  width: 0%;
+  z-index: 9999;
+  transition: width 0.1s ease-out;
+}

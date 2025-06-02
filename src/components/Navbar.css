@@ -1,0 +1,48 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(15, 15, 15, 0.85);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.navbar a {
+  color: #00FFF7;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 80%;
+  height: 2px;
+  background: #FF2768;
+  transition: transform 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #FF2768;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+  transform: translateX(-50%) scaleX(1);
+}

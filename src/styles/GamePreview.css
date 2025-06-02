@@ -1,0 +1,135 @@
+/* GamePreview.css */
+
+/* Container principal avec glassmorphism et légère ombre néon */
+.game-preview {
+  padding: 4rem 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  background: rgba(26, 28, 31, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 255, 247, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 255, 247, 0.1);
+}
+
+/* Titre principal néon + centrage */
+.game-preview h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.4rem;
+  color: #00FFF7;
+  text-shadow:
+    0 0 8px rgba(0, 255, 247, 0.8),
+    0 0 16px rgba(0, 255, 247, 0.6),
+    0 0 24px rgba(0, 255, 247, 0.4);
+}
+
+/* Sous-sections (ex. Gameplay, UI, Map…) avec séparation */
+.game-section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: rgba(26, 28, 31, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 255, 247, 0.15);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.game-section:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 12px rgba(0, 255, 247, 0.6),
+    0 0 24px rgba(0, 255, 247, 0.4);
+}
+
+/* Ligne d’images responsive */
+.image-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Box pour chaque image + légende */
+.image-box {
+  position: relative;
+  text-align: center;
+  width: 280px;
+  background: rgba(26, 28, 31, 0.4);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 255, 247, 0.2);
+  border-radius: 8px;
+  padding: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.image-box:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 0 16px rgba(0, 255, 247, 0.8),
+    0 0 32px rgba(0, 255, 247, 0.5);
+}
+
+/* L’image en elle-même avec bord et ombre subtile */
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 255, 247, 0.2);
+  box-shadow:
+    0 4px 12px rgba(0, 255, 247, 0.1),
+    0 8px 24px rgba(0, 255, 247, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.image-box img:hover {
+  transform: scale(1.03);
+  box-shadow:
+    0 0 12px rgba(0, 255, 247, 0.6),
+    0 0 24px rgba(0, 255, 247, 0.4);
+}
+
+/* Légende sous l’image, style néon-gris, légère opacité */
+.legend {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(234, 251, 255, 0.85);
+  text-shadow:
+    0 0 4px rgba(0, 255, 247, 0.4);
+}
+
+/* Responsive – réduire la taille des boxes sur écrans petits */
+@media (max-width: 768px) {
+  .image-box {
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  
+  .game-preview {
+    padding: 3rem 1rem;
+  }
+  
+  .game-preview h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Animation d’entrée des sections (facultatif, si tu veux un fade-in) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ajouter cette classe à .game-section pour animer à l’entrée */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
