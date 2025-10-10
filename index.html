@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Portfolio - DENELLE Mahoé</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-server"></i>
+                <span>DENELLE Mahoé</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#education" class="nav-link">Formation</a></li>
+                <li><a href="#experience" class="nav-link">Expérience</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </h1>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">Découvrir mon profil</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="server-rack">
+                    <div class="server-unit" style="--delay: 0s;"></div>
+                    <div class="server-unit" style="--delay: 0.2s;"></div>
+                    <div class="server-unit" style="--delay: 0.4s;"></div>
+                    <div class="server-unit" style="--delay: 0.6s;"></div>
+                    <div class="server-unit" style="--delay: 0.8s;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">À Propos de Moi</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p class="about-description">
+                    Je m'appelle DENELLE Mahoé, passionné d'informatique depuis mon plus jeune âge. J’ai exploré de nombreux domaines : création de sites web, gestion de serveurs, systèmes et réseaux... C’est d’ailleurs dans l’infrastructure et l’hébergement que j’ai lancé Blackhost, une plateforme proposant des services d'hébergement de jeux, des VPS, de l’hébergement mutualisé et des services email professionnels.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Projets Réalisés</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Années d'Expérience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2">0</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-container">
+                        <div class="profile-bg"></div>
+                        <i class="fas fa-user-tie profile-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Formation & Diplômes</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-date">2025 - 2026 </div>
+                    <div class="timeline-content">
+                        <h3>BTS Services Services informatiques aux organisations SISR</h3>
+                        <p>Maîtrise des systèmes et réseaux informatiques, de leur administration à leur sécurisation.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-date">2022 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Baccalauréat professionnel Systèmes Numériques</h3>
+                        <p>Spécialité Réseaux et Systèmes. Mention Très Bien, forte base en systèmes et réseaux.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Expérience Professionnelle</h2>
+            <div class="experience-grid">
+                <div class="experience-card" data-aos="zoom-in" style="--delay: 0s;">
+                    <div class="card-header">
+                        <i class="fas fa-building"></i>
+                        <div class="company-info">
+                            <h3>Alternance - Technicien Datacenter</h3>
+                            <p>DC2Scale• 2025 - Présent</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Montage et mise en baie de serveurs et équipements réseau.</li>
+                            <li>Mise à jour de firmware et configuration initiale des serveurs.</li>
+                            <li>Câblage, brassage et organisation des baies informatiques.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-card" data-aos="zoom-in" style="--delay: 0.2s;">
+                    <div class="card-header">
+                        <i class="fas fa-server"></i>
+                        <div class="company-info">
+                            <h3>Alternance - Technicien fibre optique</h3>
+                            <p>ICR Telecom • 2024 - 2025</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Raccordement des clients au réseau FTTH</li>
+                            <li>Tirage, aiguillage et soudure fibre optiques</li>
+                            <li>Test et mesure de conformité (réflectométrie, photométrie)</li>
+                            <li>Redaction des comptes rendus d'intervention</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-card" data-aos="zoom-in" style="--delay: 0.4s;">
+                    <div class="card-header">
+                        <i class="fas fa-tools"></i>
+                        <div class="company-info">
+                            <h3>Directeur / Administrateur systèmes et réseau</h3>
+                            <p>Blackhost Hebergement • 2022 - 2024</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Hebergement de serveur de jeux</li>
+                            <li>Hebergement cloud</li>
+                            <li>Location de serveurs dédié</li>
+                            <li>Transit IP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Compétences Techniques</h2>
+            <div class="skills-grid">
+                <div class="skills-category" data-aos="fade-right">
+                    <h3><i class="fas fa-network-wired"></i> Réseaux & Sécurité</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Commutation & routage</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95%"></div>
+                        </div>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">-Sécurité réseaux</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Monitoring</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                </div>
+
+                <div class="skills-category" data-aos="fade-up">
+                    <h3><i class="fas fa-cloud"></i> Systèmes</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Linux & Windows</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="92%"></div>
+                        </div>
+                        <span class="skill-percent">92%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Virtualisation</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="88%"></div>
+                        </div>
+                        <span class="skill-percent">88%</span>
+                    </div>
+                </div>
+
+                <div class="skills-category" data-aos="fade-left">
+                    <h3><i class="fas fa-network-wired"></i>Infrastructure</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Serveurs physiques</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Baies & câblage</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="87%"></div>
+                        </div>
+                        <span class="skill-percent">87%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contactez-moi</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>mahoe.pllx@icloud.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+33 6 70 98 10 05</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localisation</h4>
+                            <p>Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/mahoé-denelle-901032256/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Portfolio DENELLE Mahoé. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
