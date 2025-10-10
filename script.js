@@ -80,7 +80,6 @@ function initTypingEffect() {
     const texts = [
         'Administrateur système',
         'Administrateur réseaux',
-        'Spécialiste Cloud',
         'Technicien datacenter'
     ];
     
