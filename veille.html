@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique - Portfolio BTS SIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-server"></i>
+                DENELLE Mahoé<span>.sisr</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html#bts-sio" class="nav-link">BTS SIO</a></li>
+                <li><a href="index.html#parcours" class="nav-link">Parcours</a></li>
+                <li><a href="index.html#competences" class="nav-link">Compétences</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="epreuve.html" class="nav-link">Épreuves</a></li>
+                <li><a href="veille.html" class="nav-link active">Veille</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Veille Content -->
+    <div class="veille-page">
+        <div class="container">
+
+            <div class="veille-intro" data-aos="fade-up">
+                <h1><i class="fas fa-binoculars"></i> Veille Technologique</h1>
+                <p>
+                    La veille technologique consiste à surveiller de manière continue les évolutions techniques, les innovations et les tendances dans un secteur donné afin d'anticiper les changements et de rester à jour sur les meilleures pratiques.
+                </p>
+            </div>
+
+            <!-- Méthodologie -->
+            <div class="veille-section" data-aos="fade-up">
+                <h2><i class="fas fa-cogs"></i> Ma Méthodologie de Veille</h2>
+                <div class="veille-card">
+                    <p style="margin-bottom: 20px; font-size: 1.05rem; color: var(--text-secondary);">Pour réaliser ma veille technologique, j'utilise une approche structurée et automatisée qui me permet de centraliser les informations critiques sans être submergé par le "bruit" numérique.</p>
+                    <div class="tool-grid">
+                        <div class="tool-card">
+                            <i class="fas fa-rss"></i>
+                            <span>Feedly</span>
+                            <p class="tool-desc">Agrégateur RSS</p>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fas fa-bell"></i>
+                            <span>Google Alerts</span>
+                            <p class="tool-desc">Alertes automatiques</p>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fab fa-x-twitter"></i>
+                            <span>Listes X/Twitter</span>
+                            <p class="tool-desc">Experts et actualités</p>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <span>Newsletters</span>
+                            <p class="tool-desc">Synthèses hebdomadaires</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thématique Zero Trust -->
+            <div class="veille-section" data-aos="fade-up">
+                <h2><i class="fas fa-shield-halved"></i> Thématique : Le Zero Trust</h2>
+                <div class="veille-card">
+                    <div class="problematique-box">
+                        <p class="label"><i class="fas fa-question-circle"></i> Problématique</p>
+                        <p>Comment sécuriser efficacement un réseau moderne où le périmètre traditionnel n'existe plus (Cloud, Télétravail, BYOD, mobilité) ?</p>
+                    </div>
+
+                    <p style="margin-bottom: 15px; font-size: 1.05rem; color: var(--text-secondary);">Le concept <strong style="color: var(--text-primary);">Zero Trust</strong> (Confiance Zéro) repose sur un principe fondamental : <em>"Never Trust, Always Verify"</em> (Ne jamais faire confiance, toujours vérifier).</p>
+
+                    <p style="margin-bottom: 20px; color: var(--text-secondary);">Dans ce modèle de sécurité, chaque utilisateur, appareil et application doit être authentifié et autorisé en permanence, qu'il se trouve à l'intérieur ou à l'extérieur du réseau de l'entreprise. Il n'y a plus de "zone de confiance" implicite.</p>
+
+                    <div class="axes-box">
+                        <h4><i class="fas fa-list-check"></i> Axes de recherche et concepts clés :</h4>
+                        <ul>
+                            <li><strong>Micro-segmentation du réseau</strong> : Diviser le réseau en zones isolées pour limiter les mouvements latéraux en cas d'intrusion.</li>
+                            <li><strong>Authentification Multi-Facteurs (MFA)</strong> : Renforcer la vérification d'identité avec plusieurs facteurs d'authentification.</li>
+                            <li><strong>Gestion des identités et des accès (IAM)</strong> : Contrôler précisément qui a accès à quoi, avec le principe du moindre privilège.</li>
+                            <li><strong>Le modèle SASE (Secure Access Service Edge)</strong> : Convergence de la sécurité réseau et du SD-WAN dans le cloud.</li>
+                            <li><strong>Surveillance continue et analyse comportementale</strong> : Détecter les anomalies et réagir en temps réel aux menaces.</li>
+                        </ul>
+                    </div>
+
+                    <div class="pourquoi-box">
+                        <h4><i class="fas fa-lightbulb"></i> Pourquoi cette thématique ?</h4>
+                        <p>Avec l'explosion du télétravail et l'adoption massive du cloud, les entreprises ne peuvent plus se fier uniquement aux pare-feu traditionnels. Le Zero Trust représente l'avenir de la cybersécurité et est de plus en plus adopté par les grandes organisations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sources -->
+            <div class="veille-section" data-aos="fade-up">
+                <h2><i class="fas fa-bookmark"></i> Sources Fiables et Références</h2>
+                <div class="veille-card">
+                    <div class="source-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <strong>ANSSI (Agence Nationale de la Sécurité des Systèmes d'Information)</strong>
+                            <p>Actualités officielles sur la cybersécurité en France, recommandations et alertes CERT-FR sur les vulnérabilités critiques.</p>
+                        </div>
+                    </div>
+                    <div class="source-item">
+                        <i class="fas fa-newspaper"></i>
+                        <div>
+                            <strong>Le Monde Informatique</strong>
+                            <p>Magazine spécialisé couvrant les infrastructures IT, le cloud d'entreprise et les tendances technologiques.</p>
+                        </div>
+                    </div>
+                    <div class="source-item">
+                        <i class="fas fa-shield-virus"></i>
+                        <div>
+                            <strong>Cybermalveillance.gouv.fr</strong>
+                            <p>Plateforme gouvernementale d'information sur les menaces actuelles (Phishing, Ransomwares, arnaques en ligne).</p>
+                        </div>
+                    </div>
+                    <div class="source-item">
+                        <i class="fas fa-blog"></i>
+                        <div>
+                            <strong>Blogs techniques (Microsoft, Cisco, Palo Alto Networks)</strong>
+                            <p>Articles techniques et retours d'expérience des leaders du secteur sur le Zero Trust et la sécurité réseau.</p>
+                        </div>
+                    </div>
+                    <div class="source-item">
+                        <i class="fab fa-reddit"></i>
+                        <div>
+                            <strong>Communautés Reddit (r/sysadmin, r/cybersecurity)</strong>
+                            <p>Discussions entre professionnels IT, partage de bonnes pratiques et retours d'expérience terrain.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dossier Download -->
+            <div class="dossier-card" data-aos="fade-up">
+                <i class="fas fa-file-alt"></i>
+                <h3>Dossier de Veille Complet</h3>
+                <p>Téléchargez mon dossier de veille technologique détaillé incluant mes recherches, analyses et synthèses sur le Zero Trust.</p>
+                <a href="docs/dossier_veille.pdf" class="btn btn-primary">
+                    <i class="fas fa-download"></i> Télécharger le Dossier (PDF)
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 - Portfolio BTS SIO SISR | <strong>DENELLE Mahoé</strong></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

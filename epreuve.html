@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Épreuves E5 & E6 - Portfolio BTS SIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="particles" id="particles"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-server"></i>
+                DENELLE Mahoé<span>.sisr</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html#bts-sio" class="nav-link">BTS SIO</a></li>
+                <li><a href="index.html#parcours" class="nav-link">Parcours</a></li>
+                <li><a href="index.html#competences" class="nav-link">Compétences</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="epreuve.html" class="nav-link active">Épreuves</a></li>
+                <li><a href="veille.html" class="nav-link">Veille</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="epreuve-page">
+        <div class="container">
+
+            <div class="epreuve-header-block e6" data-aos="fade-up">
+                <h1><i class="fas fa-network-wired"></i> Épreuve E6</h1>
+                <h3>Administration des systèmes et des réseaux</h3>
+                <p>Travaux pratiques de spécialité et projets d'infrastructure complexes.</p>
+            </div>
+
+            <div class="epreuve-card" data-aos="fade-up">
+                <div class="epreuve-card-header e6">
+                    <h3><i class="fas fa-cubes"></i> Infrastructure Supervisée</h3>
+                    <span class="badge badge-orange">Projet 1</span>
+                </div>
+                <div class="epreuve-card-body">
+                    <p><strong>Contexte :</strong> Mise en œuvre d'une solution de supervision centralisée (Zabbix/Grafana) et d'un système de gestion de configuration (Oxidized) pour une infrastructure hybride virtualisée sous Proxmox et MikroTik.</p>
+                    <p><strong>Compétences mobilisées :</strong> Virtualisation, supervision, hypervision, gestion de ressources, monitoring, alerting, backup automatisé.</p>
+                </div>
+                <div class="epreuve-card-footer">
+                    <a href="docs/Projet-1-E6-Fiche-descriptive-de-realisation-professionnelle-DENELLE-Mahoe.pdf" class="doc-link"><i class="fas fa-file-pdf"></i> Fiche descriptive</a>
+                    <a href="docs/Projet-1-E6-Documentation-technique-DENELLE-Mahoé.pdf" class="doc-link"><i class="fas fa-file-pdf"></i> Documentation technique</a>
+                    <a href="docs/schema_synecloud.png" class="doc-link"><i class="fas fa-image"></i> Schéma Infrastructure</a>
+                </div>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid rgba(0, 212, 255, 0.2); margin: 50px 0;">
+
+            <div class="epreuve-header-block e5" data-aos="fade-up">
+                <h1><i class="fas fa-laptop-code"></i> Épreuve E5</h1>
+                <h3>Support et mise à disposition de services informatiques</h3>
+                <p>Situations professionnelles réalisées en cours de formation et en entreprise.</p>
+            </div>
+
+            <div class="synthese-card" data-aos="fade-up">
+                <i class="fas fa-clipboard-list"></i>
+                <h3>Tableau de Synthèse Récapitulatif</h3>
+                <p>Téléchargez l'Annexe 6-1 regroupant l'ensemble de mes compétences validées et situations professionnelles.</p>
+                <a href="docs/Epreuve E5 - BTS SIO 2026-Tableau de synthèse - DENELLE-Mahoé.pdf" class="btn btn-primary"><i class="fas fa-download"></i> Télécharger l'Annexe (PDF)</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 - Portfolio BTS SIO SISR | <strong>DENELLE Mahoé</strong></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
